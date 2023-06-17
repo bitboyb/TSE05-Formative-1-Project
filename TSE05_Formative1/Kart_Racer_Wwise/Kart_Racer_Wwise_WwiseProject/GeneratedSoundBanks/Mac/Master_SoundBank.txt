@@ -1,0 +1,15 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1048210378	Play_Boost_Start			\Default Work Unit\Play_Boost_Start	
+	1418047778	Play_Boost_Stop			\Default Work Unit\Play_Boost_Stop	
+	1553219250	Play_Collision			\Default Work Unit\Play_Collision	
+	1910152473	Play_Engine_Kart			\Default Work Unit\Play_Engine_Kart	
+	1953146513	Play_TireSkid			\Default Work Unit\Play_TireSkid	
+	1987163492	Play_Engine_Bike			\Default Work Unit\Play_Engine_Bike	
+	2216498074	Play_Boost_Fail			\Default Work Unit\Play_Boost_Fail	
+	3119007570	Play_Engine_3Wheeler			\Default Work Unit\Play_Engine_3Wheeler	
+	3201268741	Play_Item_Hit			\Default Work Unit\Play_Item_Hit	
+	3300110083	Play_Item_Use			\Default Work Unit\Play_Item_Use	
+	3689126666	Play_Jump			\Default Work Unit\Play_Jump	
+	3995482915	Stop_TireSkid			\Default Work Unit\Stop_TireSkid	
+	4285282925	Play_Land			\Default Work Unit\Play_Land	
+

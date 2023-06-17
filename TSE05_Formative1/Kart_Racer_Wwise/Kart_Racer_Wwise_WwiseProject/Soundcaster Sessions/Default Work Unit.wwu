@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8F473DEC-ABD6-46DE-946A-F0AAB12866CF}" SchemaVersion="94">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{8F473DEC-ABD6-46DE-946A-F0AAB12866CF}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{CAF10A54-6FAB-424A-97DC-5CD7C083D0F9}">
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Speed" ID="{04326F1C-477A-4061-B74D-7B1B01E9FF5F}"/>
+							<Value>1.37370676616058E-311</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="OffRoad" ID="{7F4E5227-BB8D-4236-823E-1E4DB4645468}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6C419F53-235F-4B91-81F2-F14004BD640F}" SchemaVersion="94">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{6C419F53-235F-4B91-81F2-F14004BD640F}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="GroundSurface" ID="{938C3848-A58F-4759-AD46-82F67B46F0D6}">
+					<ChildrenList>
+						<Switch Name="Tarmac" ID="{0609B4AB-720C-4FA5-BA3B-EA69E7A2AB60}"/>
+						<Switch Name="OffRoad" ID="{7F4E5227-BB8D-4236-823E-1E4DB4645468}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

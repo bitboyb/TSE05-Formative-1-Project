@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>G:\tse-games\Kart_Racer_Wwise\Kart_Racer_Wwise_noSound\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>G:\tse-games\Kart_Racer_Wwise\Kart_Racer_Wwise_noSound\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>G:\tse-games\Kart_Racer_Wwise\Kart_Racer_Wwise_noSound\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>G:\tse-games\Kart_Racer_Wwise\Kart_Racer_Wwise_noSound\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2469504869" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Master_SoundBank</ObjectPath>
+			<ShortName>Master_SoundBank</ShortName>
+			<Path>Master_SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2216498074" Name="Play_Boost_Fail" ObjectPath="\Events\Default Work Unit\Play_Boost_Fail" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1048210378" Name="Play_Boost_Start" ObjectPath="\Events\Default Work Unit\Play_Boost_Start" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1418047778" Name="Play_Boost_Stop" ObjectPath="\Events\Default Work Unit\Play_Boost_Stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1553219250" Name="Play_Collision" ObjectPath="\Events\Default Work Unit\Play_Collision" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3119007570" Name="Play_Engine_3Wheeler" ObjectPath="\Events\Default Work Unit\Play_Engine_3Wheeler" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1987163492" Name="Play_Engine_Bike" ObjectPath="\Events\Default Work Unit\Play_Engine_Bike" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1910152473" Name="Play_Engine_Kart" ObjectPath="\Events\Default Work Unit\Play_Engine_Kart" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3201268741" Name="Play_Item_Hit" ObjectPath="\Events\Default Work Unit\Play_Item_Hit" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3300110083" Name="Play_Item_Use" ObjectPath="\Events\Default Work Unit\Play_Item_Use" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3689126666" Name="Play_Jump" ObjectPath="\Events\Default Work Unit\Play_Jump" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4285282925" Name="Play_Land" ObjectPath="\Events\Default Work Unit\Play_Land" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1953146513" Name="Play_TireSkid" ObjectPath="\Events\Default Work Unit\Play_TireSkid" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3995482915" Name="Stop_TireSkid" ObjectPath="\Events\Default Work Unit\Stop_TireSkid" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
