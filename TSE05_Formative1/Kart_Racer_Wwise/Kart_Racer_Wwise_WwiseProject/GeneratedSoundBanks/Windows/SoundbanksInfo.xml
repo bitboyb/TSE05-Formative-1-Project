@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>G:\tse-games\Kart_Racer_Wwise\Kart_Racer_Wwise_noSound\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>G:\tse-games\Kart_Racer_Wwise\Kart_Racer_Wwise_noSound\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>G:\tse-games\Kart_Racer_Wwise\Kart_Racer_Wwise_noSound\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\Unity Prototypes\TSE05-Formative-1-Project\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Unity Prototypes\TSE05-Formative-1-Project\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Unity Prototypes\TSE05-Formative-1-Project\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>G:\tse-games\Kart_Racer_Wwise\Kart_Racer_Wwise_noSound\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Unity Prototypes\TSE05-Formative-1-Project\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>

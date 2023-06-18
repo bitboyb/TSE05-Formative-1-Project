@@ -4,6 +4,36 @@
 		<WorkUnit Name="Default Work Unit" ID="{00AB1756-789C-4776-9D65-5E8C5C8958BF}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{280A858D-6EEA-4E2C-A27D-A6C2E0425BDD}" ShortID="562778017">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Master_Volume" ID="{AC25B51E-0A25-43C7-B1DC-DCE693022264}" WorkUnitID="{3C9E3BD0-7690-426D-9B98-AC59B30584CF}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{78A2AA62-D309-4518-96F1-9A5EA09B97EA}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>2.5</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{66191FCE-136F-4408-A16E-F281467C37B6}" WorkUnitID="{EA781702-8B0B-48D4-966A-482AF58B1E0A}"/>
@@ -12,18 +42,102 @@
 					<ChildrenList>
 						<Bus Name="AMB" ID="{60E682D9-3914-4EBB-8717-2E649C8E65EC}">
 							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{A855F739-5EBF-4E26-B364-6B07D6266BA5}" ShortID="848166837">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="AMB_Volume" ID="{B11D57E5-65BC-4E2C-A9C6-809C8EE35615}" WorkUnitID="{3C9E3BD0-7690-426D-9B98-AC59B30584CF}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{42DCF998-AC81-41D1-B3DE-BB82863EB5A7}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>2.5</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="Color" Type="int16" Value="2"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 						</Bus>
 						<Bus Name="UI" ID="{E9967C19-B096-44AB-BE02-BF0E6D7B922F}">
 							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{51612F63-9AB1-472B-93C4-EEED879184D5}" ShortID="281579446">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="UI_Volume" ID="{D0735774-EB52-4B28-922A-D0BCE422C303}" WorkUnitID="{3C9E3BD0-7690-426D-9B98-AC59B30584CF}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{D3363520-38F9-4854-AA9D-2ADD26A38955}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>2.5</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="Color" Type="int16" Value="19"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 						</Bus>
 						<Bus Name="SFX" ID="{D118FA7A-FCAD-4B84-8FB7-02A89107DA6D}">
 							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{26EF5663-CF20-466B-8066-7E733E264EFE}" ShortID="945919874">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="SFX_Volume" ID="{8EB8E5BD-B912-4089-9F45-29606364A9DB}" WorkUnitID="{3C9E3BD0-7690-426D-9B98-AC59B30584CF}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{5223D676-86ED-4F40-AEB5-6003C47BA8F4}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>2.5</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="Color" Type="int16" Value="10"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
