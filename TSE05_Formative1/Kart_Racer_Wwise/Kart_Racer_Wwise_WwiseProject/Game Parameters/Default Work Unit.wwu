@@ -5,16 +5,39 @@
 			<ChildrenList>
 				<GameParameter Name="Speed" ID="{04326F1C-477A-4061-B74D-7B1B01E9FF5F}">
 					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="75"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
 					</PropertyList>
 				</GameParameter>
 				<Folder Name="Volumes" ID="{7F42B8AE-ECE8-4618-9123-C79BEAC9966E}" ShortID="489936623">
 					<ChildrenList>
-						<GameParameter Name="Master_Volume" ID="{AC25B51E-0A25-43C7-B1DC-DCE693022264}"/>
-						<GameParameter Name="SFX_Volume" ID="{8EB8E5BD-B912-4089-9F45-29606364A9DB}"/>
-						<GameParameter Name="AMB_Volume" ID="{B11D57E5-65BC-4E2C-A9C6-809C8EE35615}"/>
-						<GameParameter Name="UI_Volume" ID="{D0735774-EB52-4B28-922A-D0BCE422C303}"/>
+						<GameParameter Name="Master_Volume" ID="{AC25B51E-0A25-43C7-B1DC-DCE693022264}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0.8"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SFX_Volume" ID="{8EB8E5BD-B912-4089-9F45-29606364A9DB}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0.8"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="AMB_Volume" ID="{B11D57E5-65BC-4E2C-A9C6-809C8EE35615}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0.8"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="UI_Volume" ID="{D0735774-EB52-4B28-922A-D0BCE422C303}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0.8"/>
+								<Property Name="Max" Type="Real64" Value="1"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

@@ -23,6 +23,7 @@ namespace Audio
                     PlayerPrefs.SetFloat(pref, 0.8f);
                     AkSoundEngine.SetRTPCValue(pref, 0.8f);
                 }
+                Debug.Log(pref + PlayerPrefs.GetFloat(pref));
             }
         }
     }

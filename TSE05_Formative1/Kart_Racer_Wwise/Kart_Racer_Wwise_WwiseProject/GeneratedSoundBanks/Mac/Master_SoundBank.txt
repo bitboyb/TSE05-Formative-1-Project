@@ -10,6 +10,21 @@ Event	ID	Name			Wwise Object Path	Notes
 	3201268741	Play_Item_Hit			\Default Work Unit\Play_Item_Hit	
 	3300110083	Play_Item_Use			\Default Work Unit\Play_Item_Use	
 	3689126666	Play_Jump			\Default Work Unit\Play_Jump	
+	3732510439	Play_Button_OnPress			\Default Work Unit\Play_Button_OnPress	
 	3995482915	Stop_TireSkid			\Default Work Unit\Stop_TireSkid	
 	4285282925	Play_Land			\Default Work Unit\Play_Land	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	640949982	Speed			\Default Work Unit\Speed	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	26672278	sfx_engine_OnLoop	D:\Unity Prototypes\TSE05-Formative-1-Project\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\.cache\Mac\SFX\sfx_engine_OnLoop_85C21AE7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Vehicle\Engine\sfx_engine_OnLoop		24705
+	190057265	vehicle_OnLand	D:\Unity Prototypes\TSE05-Formative-1-Project\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\.cache\Mac\SFX\sfx_vehicle_OnLand_F2B9B919.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Vehicle\Jump\vehicle_OnLand		25487
+	192548547	boost_OnStart	D:\Unity Prototypes\TSE05-Formative-1-Project\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\.cache\Mac\SFX\sfx_engine_boost_OnSuccess_F2B9B919.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Vehicle\Boost\boost_OnStart		17280
+	311810112	boost_OnFail	D:\Unity Prototypes\TSE05-Formative-1-Project\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\.cache\Mac\SFX\sfx_boost_OnFail_F2B9B919.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Vehicle\Boost\boost_OnFail		10472
+	339057900	button_OnSelect	D:\Unity Prototypes\TSE05-Formative-1-Project\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\.cache\Mac\SFX\The Chris Alan - 8-Bit SFX & UI - Button Open Menu 2_F2B9B919.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\button_OnSelect		11031
+	456484620	vehicle_OnSkid	D:\Unity Prototypes\TSE05-Formative-1-Project\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\.cache\Mac\SFX\sfx_vehicle_OnSkid_loop_85C21AE7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Vehicle\Tire\vehicle_OnSkid		49726
+	640644190	sfx_boost_OnLoop	D:\Unity Prototypes\TSE05-Formative-1-Project\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\.cache\Mac\SFX\sfx_boost_OnLoop_DD1EDF05.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Vehicle\Boost\sfx_boost_OnLoop		43435
+	918607903	vehicle_OnJump	D:\Unity Prototypes\TSE05-Formative-1-Project\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\.cache\Mac\SFX\sfx_vehicle_OnJump_F2B9B919.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Vehicle\Jump\vehicle_OnJump		34461
+	1058234691	vehicle_OnCollision	D:\Unity Prototypes\TSE05-Formative-1-Project\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\.cache\Mac\SFX\sfx_vehicle_OnCollision_F2B9B919.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Collisions\vehicle_OnCollision		14715
 

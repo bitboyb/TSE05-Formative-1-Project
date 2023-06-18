@@ -5,10 +5,10 @@
 			<ChildrenList>
 				<Event Name="Play_Engine_Kart" ID="{B3057319-7BE5-4FD9-B3F9-1D7AF6B92DD5}">
 					<ChildrenList>
-						<Action Name="" ID="{E4C8F5FD-4DC0-4D13-BA61-6AADFE4F1690}" ShortID="147040936">
+						<Action Name="" ID="{60577EBF-FE23-41B3-9D42-1EEAA2321DBC}" ShortID="609391555">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Engine0" ID="{0CBB6C1E-CB40-4B34-8A41-A342EEE48284}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
+									<ObjectRef Name="sfx_engine_OnLoop" ID="{AAAF0061-6C75-476A-AF1B-01EE2F0C3F99}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -16,10 +16,10 @@
 				</Event>
 				<Event Name="Play_Engine_Bike" ID="{51B412F9-ED9E-4D8D-9770-3397BE814F84}">
 					<ChildrenList>
-						<Action Name="" ID="{010F8B70-2AAB-4484-A474-26F422DB9E6C}" ShortID="584651765">
+						<Action Name="" ID="{10347E3F-58B5-4638-A46E-A492B59207BF}" ShortID="177082067">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Engine1" ID="{91A351FB-43CE-4D78-BB21-1E013226DD65}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
+									<ObjectRef Name="sfx_engine_OnLoop" ID="{AAAF0061-6C75-476A-AF1B-01EE2F0C3F99}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -27,10 +27,10 @@
 				</Event>
 				<Event Name="Play_Engine_3Wheeler" ID="{60FB115C-4F8F-4378-9A71-54C791A6E58C}">
 					<ChildrenList>
-						<Action Name="" ID="{0CC81710-9348-4A72-B819-C02FF1C81186}" ShortID="346728685">
+						<Action Name="" ID="{4966608C-8C7A-43AE-85F6-8CD22CE2B926}" ShortID="523451909">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Engine3" ID="{649EFD5C-1221-4329-A357-FC808532FC5E}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
+									<ObjectRef Name="sfx_engine_OnLoop" ID="{AAAF0061-6C75-476A-AF1B-01EE2F0C3F99}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -38,10 +38,10 @@
 				</Event>
 				<Event Name="Play_Jump" ID="{B1D21250-2583-4EBD-994C-B0CDE6DAB722}">
 					<ChildrenList>
-						<Action Name="" ID="{C25B0637-3633-4DAD-97B7-A1519CE5E806}" ShortID="214596912">
+						<Action Name="" ID="{09EC724C-3939-44AA-935E-D00807B40FFF}" ShortID="805317696">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Jump" ID="{E94A6F98-FB68-4AB8-BAC9-BF650D32180F}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
+									<ObjectRef Name="vehicle_OnJump" ID="{34E0EEB9-EBCE-4878-9C9B-2BF1CBC3546E}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -49,10 +49,10 @@
 				</Event>
 				<Event Name="Play_Land" ID="{1EB9212B-8AD2-4896-8379-B8E1CE4122A2}">
 					<ChildrenList>
-						<Action Name="" ID="{2A223024-51F9-4430-8F01-D992208D33EF}" ShortID="135499452">
+						<Action Name="" ID="{6DA58796-8988-4268-8A0B-31083057FFE6}" ShortID="69082467">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Land" ID="{5E088304-16DC-47BA-AB50-236E9B5D1A84}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
+									<ObjectRef Name="vehicle_OnLand" ID="{3DC2B024-F395-4881-B8ED-D9FA96AE7204}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -60,17 +60,17 @@
 				</Event>
 				<Event Name="Play_Boost_Start" ID="{2B39125A-9525-4046-992B-009F82F16684}">
 					<ChildrenList>
-						<Action Name="" ID="{F873461B-DAC7-471E-8EF6-0DA65DEAA76C}" ShortID="666396931">
+						<Action Name="" ID="{0E922486-9C91-4402-BC39-C10D812BC678}" ShortID="436793006">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="BoostStart" ID="{B4BF29FA-B21B-42DA-BA78-0742606D0797}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
+									<ObjectRef Name="boost_OnStart" ID="{694CCC47-1FF9-4623-8950-2B05DC8444AB}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{465D3C7E-8802-4BA0-9D6C-E6AFA1FA1591}" ShortID="441481079">
+						<Action Name="" ID="{FA0F60DD-0BCB-4661-9971-F4FA23099790}" ShortID="946068021">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Boost" ID="{62E6C47D-54FA-47F9-9C03-2148E927273E}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
+									<ObjectRef Name="sfx_boost_OnLoop" ID="{74A6145E-E753-4115-A6A7-AB6D7E232B4B}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -78,10 +78,10 @@
 				</Event>
 				<Event Name="Play_Boost_Fail" ID="{D6E91519-D419-4C75-980D-A02E1712E424}">
 					<ChildrenList>
-						<Action Name="" ID="{518FD70E-1DD5-4B39-99CF-14B559F71AE8}" ShortID="253658531">
+						<Action Name="" ID="{7EC3EE8C-C4E0-4992-8673-96C14A8D6418}" ShortID="617908000">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="BoostFail" ID="{688A09AC-85CD-43B1-A3E4-95F0E43BA77B}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
+									<ObjectRef Name="boost_OnFail" ID="{1635541E-212A-4723-9CAC-9D2F628171F0}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -89,13 +89,13 @@
 				</Event>
 				<Event Name="Stop_TireSkid" ID="{DEAE364E-0CA4-45FB-B4CC-BA4252B36075}">
 					<ChildrenList>
-						<Action Name="" ID="{D227B6CB-C55B-4FC1-8212-77D80A1158F3}" ShortID="401293183">
+						<Action Name="" ID="{207B67F9-D931-4432-BF28-06E27A57002D}" ShortID="74913455">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="GroundSurface" ID="{0B3FF39A-BEFD-46BB-9E05-B0C7243D4AA5}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
+									<ObjectRef Name="vehicle_OnSkid" ID="{C1CF1D79-096B-491C-8290-72199AE9E9A8}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -103,46 +103,36 @@
 				</Event>
 				<Event Name="Play_TireSkid" ID="{55801FAB-3CF1-4258-988A-35209CC2634D}">
 					<ChildrenList>
-						<Action Name="" ID="{674A755A-9055-4E2A-A87B-FB1F68C0D75D}" ShortID="338706631">
+						<Action Name="" ID="{84C7C7B5-4424-453E-B964-CF2E414AF2F3}" ShortID="213604111">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="GroundSurface" ID="{0B3FF39A-BEFD-46BB-9E05-B0C7243D4AA5}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
+									<ObjectRef Name="vehicle_OnSkid" ID="{C1CF1D79-096B-491C-8290-72199AE9E9A8}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Item_Use" ID="{B8DDA85A-531F-4EF3-A742-43C96B7CC64B}">
-					<ChildrenList>
-						<Action Name="" ID="{0873F8B6-FCE1-4BBD-977D-07A705751A89}" ShortID="448483349">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="UseItem" ID="{51E8AD13-9EF4-49B8-8824-718730872079}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Item_Hit" ID="{EB2E0B7F-6619-48C1-AA61-D431B6DF2310}">
-					<ChildrenList>
-						<Action Name="" ID="{465A1AB4-44D9-483E-9ECB-B10D26EFDB0D}" ShortID="897668489">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="ItemHit" ID="{5740A87F-6CD7-4CAA-B27D-63AAA58006DD}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				<Event Name="Play_Item_Use" ID="{B8DDA85A-531F-4EF3-A742-43C96B7CC64B}"/>
+				<Event Name="Play_Item_Hit" ID="{EB2E0B7F-6619-48C1-AA61-D431B6DF2310}"/>
 				<Event Name="Play_Boost_Stop" ID="{9762B01B-EBCE-4970-A558-5B53C482BDA5}">
 					<ChildrenList>
-						<Action Name="" ID="{8AEE155B-AB3C-4B95-A19F-43F10C7EB2E6}" ShortID="1049247084">
+						<Action Name="" ID="{824C6410-E223-424D-ADBF-7DFA6B5B0386}" ShortID="385451305">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Boost" ID="{62E6C47D-54FA-47F9-9C03-2148E927273E}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
+									<ObjectRef Name="boost_OnStart" ID="{694CCC47-1FF9-4623-8950-2B05DC8444AB}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3CD5206A-F4CC-48E3-987F-3E0D058FB960}" ShortID="355871349">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_boost_OnLoop" ID="{74A6145E-E753-4115-A6A7-AB6D7E232B4B}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -150,10 +140,21 @@
 				</Event>
 				<Event Name="Play_Collision" ID="{784CE59F-69C5-4672-A0E8-ECBF8D8C35A3}">
 					<ChildrenList>
-						<Action Name="" ID="{B625FFCE-9B7E-43C0-80BC-3EA2F6011AA3}" ShortID="632596465">
+						<Action Name="" ID="{5176E583-56F8-4C2B-B94A-00A2D89632F2}" ShortID="225593170">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Collision0" ID="{E2C5B827-30A8-4DFF-BFE6-3C48F5534C41}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
+									<ObjectRef Name="vehicle_OnCollision" ID="{6978B8E1-73F4-4469-8DED-0C734914654F}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Button_OnPress" ID="{1F8C67A0-03E8-4363-B508-9513D3488046}">
+					<ChildrenList>
+						<Action Name="" ID="{4AB3FD0F-6686-4FA7-8936-3837E28AA39B}" ShortID="748944613">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="button_OnSelect" ID="{4F937266-30FD-479D-A1AF-2FCF519B18D8}" WorkUnitID="{67E18E71-B8C9-4C84-8D2A-61C7C39CE6D9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

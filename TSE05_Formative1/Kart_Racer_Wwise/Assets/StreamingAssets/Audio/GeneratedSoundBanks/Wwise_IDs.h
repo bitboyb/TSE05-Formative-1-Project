@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID PLAY_BOOST_FAIL = 2216498074U;
         static const AkUniqueID PLAY_BOOST_START = 1048210378U;
         static const AkUniqueID PLAY_BOOST_STOP = 1418047778U;
+        static const AkUniqueID PLAY_BUTTON_ONPRESS = 3732510439U;
         static const AkUniqueID PLAY_COLLISION = 1553219250U;
         static const AkUniqueID PLAY_ENGINE_3WHEELER = 3119007570U;
         static const AkUniqueID PLAY_ENGINE_BIKE = 1987163492U;

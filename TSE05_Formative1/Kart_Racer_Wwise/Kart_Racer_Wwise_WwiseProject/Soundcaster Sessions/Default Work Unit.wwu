@@ -4,10 +4,36 @@
 		<WorkUnit Name="Default Work Unit" ID="{8F473DEC-ABD6-46DE-946A-F0AAB12866CF}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundcasterSession Name="New Soundcaster Session" ID="{CAF10A54-6FAB-424A-97DC-5CD7C083D0F9}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Boost_Start" ID="{2B39125A-9525-4046-992B-009F82F16684}" WorkUnitID="{490D415E-5BC7-438D-983D-64C9AB354F5D}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Boost_Stop" ID="{9762B01B-EBCE-4970-A558-5B53C482BDA5}" WorkUnitID="{490D415E-5BC7-438D-983D-64C9AB354F5D}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Speed" ID="{04326F1C-477A-4061-B74D-7B1B01E9FF5F}"/>
-							<Value>1.37370676616058E-311</Value>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFX_Volume" ID="{8EB8E5BD-B912-4089-9F45-29606364A9DB}"/>
+							<Value>0.8</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Master_Volume" ID="{AC25B51E-0A25-43C7-B1DC-DCE693022264}"/>
+							<Value>0.8</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="UI_Volume" ID="{D0735774-EB52-4B28-922A-D0BCE422C303}"/>
+							<Value>0.8</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="AMB_Volume" ID="{B11D57E5-65BC-4E2C-A9C6-809C8EE35615}"/>
+							<Value>0.8</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>

@@ -61,6 +61,8 @@ MonoBehaviour:
     m_MonitorPoolSize: 262144
     m_MonitorQueuePoolSize: 65536
     m_MaximumHardwareTimeoutMs: 1000
+    m_DebugOutOfRangeCheckEnabled: 0
+    m_DebugOutOfRangeLimit: 16
     m_SpatialAudioSettings:
       m_DiffractionShadowAttenuationFactor: 2
       m_DiffractionShadowDegrees: 30

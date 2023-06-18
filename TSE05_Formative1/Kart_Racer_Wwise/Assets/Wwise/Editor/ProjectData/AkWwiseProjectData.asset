@@ -24,14 +24,14 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5617ab009c7876479d655e8c5c8958bf
     GuidInternal: 
-    m_lastTime: -8585145600608872562
+    m_lastTime: -8585145130324500033
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: c4aba818aa4d8745aebfe5729e41244d
     GuidInternal: 
-    m_lastTime: -8586042816014775808
+    m_lastTime: -8585145139836738302
     List:
     - name: Master_SoundBank
       guid: 6201d29f518c3844b3f64edbbc2f15fd
@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5e410d49c75b8d43983d64c9ab354f5d
     GuidInternal: 
-    m_lastTime: -8585746414054775808
+    m_lastTime: -8585145110208308010
     List:
     - name: Play_Boost_Fail
       guid: 1915e9d619d4754c980da02e1712e424
@@ -58,9 +58,9 @@ MonoBehaviour:
       - ElementName: Play_Boost_Fail
         ObjectType: 3
       Path: Default Work Unit\Play_Boost_Fail
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 100
+      maxDuration: 2.063667
+      minDuration: 2.063667
     - name: Play_Boost_Start
       guid: 5a12392b25954640992b009f82f16684
       id: 1048210378
@@ -70,9 +70,9 @@ MonoBehaviour:
       - ElementName: Play_Boost_Start
         ObjectType: 3
       Path: Default Work Unit\Play_Boost_Start
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 100
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Boost_Stop
       guid: 1bb06297ceeb7049a5585b53c482bda5
       id: 1418047778
@@ -85,6 +85,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_Button_OnPress
+      guid: a0678c1fe8036343b5089513d3488046
+      id: 3732510439
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Button_OnPress
+        ObjectType: 3
+      Path: Default Work Unit\Play_Button_OnPress
+      maxAttenuation: 0
+      maxDuration: 0.384
+      minDuration: 0.384
     - name: Play_Collision
       guid: 9fe54c78c5697246a0e8ecbf8d8c35a3
       id: 1553219250
@@ -94,9 +106,9 @@ MonoBehaviour:
       - ElementName: Play_Collision
         ObjectType: 3
       Path: Default Work Unit\Play_Collision
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 100
+      maxDuration: 0.673103
+      minDuration: 0.534242
     - name: Play_Engine_3Wheeler
       guid: 5c11fb608f4f78439a7154c791a6e58c
       id: 3119007570
@@ -106,9 +118,9 @@ MonoBehaviour:
       - ElementName: Play_Engine_3Wheeler
         ObjectType: 3
       Path: Default Work Unit\Play_Engine_3Wheeler
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 100
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Engine_Bike
       guid: f912b4519eed8d4d97703397be814f84
       id: 1987163492
@@ -118,9 +130,9 @@ MonoBehaviour:
       - ElementName: Play_Engine_Bike
         ObjectType: 3
       Path: Default Work Unit\Play_Engine_Bike
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 100
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Engine_Kart
       guid: 197305b3e57bd94fb3f91d7af6b92dd5
       id: 1910152473
@@ -130,9 +142,9 @@ MonoBehaviour:
       - ElementName: Play_Engine_Kart
         ObjectType: 3
       Path: Default Work Unit\Play_Engine_Kart
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 100
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Item_Hit
       guid: 7f0b2eeb1966c148aa61d431b6df2310
       id: 3201268741
@@ -166,9 +178,9 @@ MonoBehaviour:
       - ElementName: Play_Jump
         ObjectType: 3
       Path: Default Work Unit\Play_Jump
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 100
+      maxDuration: 2.986304
+      minDuration: 1.055818
     - name: Play_Land
       guid: 2b21b91ed28a96488379b8e1ce4122a2
       id: 4285282925
@@ -178,9 +190,9 @@ MonoBehaviour:
       - ElementName: Play_Land
         ObjectType: 3
       Path: Default Work Unit\Play_Land
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 100
+      maxDuration: 1.463667
+      minDuration: 1.463667
     - name: Play_TireSkid
       guid: ab1f8055f13c5842988a35209cc2634d
       id: 1953146513
@@ -190,9 +202,9 @@ MonoBehaviour:
       - ElementName: Play_TireSkid
         ObjectType: 3
       Path: Default Work Unit\Play_TireSkid
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 100
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_TireSkid
       guid: 4e36aedea40cfb45b4ccba4252b36075
       id: 3995482915
@@ -210,7 +222,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d03b9e3c90766d429b98ac59b30584cf
     GuidInternal: 
-    m_lastTime: -8585145600608750264
+    m_lastTime: -8585145110208068372
     List:
     - name: AMB_Volume
       guid: e5571db1bc652c4ea9c6809c8ee35615
@@ -313,5 +325,8 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Kart_Racer_Wwise_WwiseProject
+  - /Kart_Racer_Wwise_WwiseProject/Events
+  - /Kart_Racer_Wwise_WwiseProject/Events/Default Work Unit
+  - /Kart_Racer_Wwise_WwiseProject/SoundBanks
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

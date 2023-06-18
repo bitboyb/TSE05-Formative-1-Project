@@ -5,15 +5,15 @@
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<PropertyList>
-						<Property Name="Volume" Type="Real64">
+						<Property Name="BusVolume" Type="Real64">
 							<RTPCList>
-								<RTPC Name="" ID="{280A858D-6EEA-4E2C-A27D-A6C2E0425BDD}" ShortID="562778017">
+								<RTPC Name="" ID="{E0F8C6B3-BB7C-42F0-9FAC-5BF67A6E0C62}" ShortID="160343000">
 									<ReferenceList>
 										<Reference Name="ControlInput">
 											<ObjectRef Name="Master_Volume" ID="{AC25B51E-0A25-43C7-B1DC-DCE693022264}" WorkUnitID="{3C9E3BD0-7690-426D-9B98-AC59B30584CF}"/>
 										</Reference>
 									</ReferenceList>
-									<Curve Name="" ID="{78A2AA62-D309-4518-96F1-9A5EA09B97EA}">
+									<Curve Name="" ID="{8822578A-03D0-4BB7-B96A-15F8C646D18E}">
 										<PropertyList>
 											<Property Name="Flags" Type="int32" Value="3"/>
 										</PropertyList>
@@ -24,8 +24,8 @@
 												<Flags>5</Flags>
 											</Point>
 											<Point>
-												<XPos>100</XPos>
-												<YPos>2.5</YPos>
+												<XPos>1</XPos>
+												<YPos>2.56766</YPos>
 												<Flags>37</Flags>
 											</Point>
 										</PointList>
@@ -61,7 +61,7 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>100</XPos>
+														<XPos>1</XPos>
 														<YPos>2.5</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -95,7 +95,7 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>100</XPos>
+														<XPos>1</XPos>
 														<YPos>2.5</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -129,7 +129,7 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>100</XPos>
+														<XPos>1</XPos>
 														<YPos>2.5</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -139,7 +139,19 @@
 									</RTPCList>
 								</Property>
 								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>30</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 						</Bus>
 					</ChildrenList>

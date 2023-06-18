@@ -5,10 +5,14 @@
 			<ChildrenList>
 				<ActorMixer Name="SFX" ID="{92753DE1-6C8D-48D8-8927-477711E14282}" ShortID="152612852">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Color" Type="int16" Value="10"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Attenuation_100" ID="{C4570C01-37F9-4149-BB35-4201BCFDCABA}" WorkUnitID="{0095F0E0-AD18-4589-8692-BD80C1F4C627}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E85F9374-D2F4-4AA7-A471-006822E3F66B}"/>
 						</Reference>
@@ -37,36 +41,98 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<ActorMixer Name="3Wheeler" ID="{747E6B9C-525D-4288-A28A-A61BFC06B139}" ShortID="103050326">
+										<Sound Name="sfx_engine_OnLoop" ID="{AAAF0061-6C75-476A-AF1B-01EE2F0C3F99}" ShortID="187995187">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{2493913F-7F5A-4F08-9474-D7FE08238D54}" ShortID="898510816">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Speed" ID="{04326F1C-477A-4061-B74D-7B1B01E9FF5F}" WorkUnitID="{3C9E3BD0-7690-426D-9B98-AC59B30584CF}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{FE52B351-415B-444C-8BF2-2A31A7AE8EE7}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-1121</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>20.05305</XPos>
+																		<YPos>186</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>20.05405</XPos>
+																		<YPos>-497</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Log2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>39.90716</XPos>
+																		<YPos>1032</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>39.94795</XPos>
+																		<YPos>75</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Log2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>59.96021</XPos>
+																		<YPos>1627</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>60.001</XPos>
+																		<YPos>717</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Log2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>75</XPos>
+																		<YPos>2356</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E85F9374-D2F4-4AA7-A471-006822E3F66B}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{00AB1756-789C-4776-9D65-5E8C5C8958BF}"/>
+													<ObjectRef Name="SFX" ID="{D118FA7A-FCAD-4B84-8FB7-02A89107DA6D}" WorkUnitID="{00AB1756-789C-4776-9D65-5E8C5C8958BF}"/>
 												</Reference>
 											</ReferenceList>
-										</ActorMixer>
-										<ActorMixer Name="Bike" ID="{3A0400C8-9614-4AA6-AC49-E0C450A79FCF}" ShortID="534971238">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E85F9374-D2F4-4AA7-A471-006822E3F66B}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{00AB1756-789C-4776-9D65-5E8C5C8958BF}"/>
-												</Reference>
-											</ReferenceList>
-										</ActorMixer>
-										<ActorMixer Name="Kart" ID="{773585F0-7761-4ED5-A87B-D8FA417C9860}" ShortID="614245170">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E85F9374-D2F4-4AA7-A471-006822E3F66B}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{00AB1756-789C-4776-9D65-5E8C5C8958BF}"/>
-												</Reference>
-											</ReferenceList>
-										</ActorMixer>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_engine_OnLoop" ID="{9929CAF4-D412-462F-9B95-4CE04081BDB6}" ShortID="26672278">
+													<Language>SFX</Language>
+													<AudioFile>sfx_engine_OnLoop.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_engine_OnLoop" ID="{9929CAF4-D412-462F-9B95-4CE04081BDB6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="Tire" ID="{2056EA57-65C3-41CB-80E3-50862AB41C78}" ShortID="50451640">
@@ -80,6 +146,42 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="vehicle_OnSkid" ID="{C1CF1D79-096B-491C-8290-72199AE9E9A8}" ShortID="20039708">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{238E43C6-0829-403A-8EDE-B46CA7071956}" ShortID="326983759">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Speed" ID="{04326F1C-477A-4061-B74D-7B1B01E9FF5F}" WorkUnitID="{3C9E3BD0-7690-426D-9B98-AC59B30584CF}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{8151A062-06FB-4A94-94C2-1C43CECB1B80}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-500</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>75</XPos>
+																		<YPos>500</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E85F9374-D2F4-4AA7-A471-006822E3F66B}"/>
@@ -88,6 +190,15 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{00AB1756-789C-4776-9D65-5E8C5C8958BF}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_vehicle_OnSkid_loop" ID="{063FF851-6BE4-4B6D-A158-0633F0A68001}" ShortID="456484620">
+													<Language>SFX</Language>
+													<AudioFile>sfx_vehicle_OnSkid_loop.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_vehicle_OnSkid_loop" ID="{063FF851-6BE4-4B6D-A158-0633F0A68001}" Platform="Linked"/>
+											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 								</ActorMixer>
@@ -102,6 +213,26 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="vehicle_OnJump" ID="{34E0EEB9-EBCE-4878-9C9B-2BF1CBC3546E}" ShortID="359732124">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{EF424DCD-7C97-448D-AF21-30765481B89F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="900"/>
+																	<Property Name="Min" Type="Real64" Value="-900"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E85F9374-D2F4-4AA7-A471-006822E3F66B}"/>
@@ -110,6 +241,15 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{00AB1756-789C-4776-9D65-5E8C5C8958BF}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_vehicle_OnJump" ID="{6B6DFB03-0E17-48A0-9508-AD7AFC91F19E}" ShortID="918607903">
+													<Language>SFX</Language>
+													<AudioFile>sfx_vehicle_OnJump.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_vehicle_OnJump" ID="{6B6DFB03-0E17-48A0-9508-AD7AFC91F19E}" Platform="Linked"/>
+											</ActiveSourceList>
 										</Sound>
 										<Sound Name="vehicle_OnLand" ID="{3DC2B024-F395-4881-B8ED-D9FA96AE7204}" ShortID="65964770">
 											<ReferenceList>
@@ -120,6 +260,15 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{00AB1756-789C-4776-9D65-5E8C5C8958BF}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_vehicle_OnLand" ID="{3D9B4958-E8D9-4E8E-B867-F5528966877D}" ShortID="190057265">
+													<Language>SFX</Language>
+													<AudioFile>sfx_vehicle_OnLand.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_vehicle_OnLand" ID="{3D9B4958-E8D9-4E8E-B867-F5528966877D}" Platform="Linked"/>
+											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 								</ActorMixer>
@@ -134,6 +283,36 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="boost_OnStart" ID="{694CCC47-1FF9-4623-8950-2B05DC8444AB}" ShortID="1009052768">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{2295011F-0F22-49D1-9622-1CF83551F97E}" ShortID="729518873">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Speed" ID="{04326F1C-477A-4061-B74D-7B1B01E9FF5F}" WorkUnitID="{3C9E3BD0-7690-426D-9B98-AC59B30584CF}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{08240B46-A5D6-49D3-82A6-9E672302E247}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-955</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>75</XPos>
+																		<YPos>1000</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E85F9374-D2F4-4AA7-A471-006822E3F66B}"/>
@@ -142,6 +321,18 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{00AB1756-789C-4776-9D65-5E8C5C8958BF}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_engine_boost_OnSuccess" ID="{C90577BB-34FA-45A4-B341-76E1BF8F4C2B}" ShortID="192548547">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>sfx_engine_boost_OnSuccess.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_engine_boost_OnSuccess" ID="{C90577BB-34FA-45A4-B341-76E1BF8F4C2B}" Platform="Linked"/>
+											</ActiveSourceList>
 										</Sound>
 										<Sound Name="boost_OnFail" ID="{1635541E-212A-4723-9CAC-9D2F628171F0}" ShortID="349212669">
 											<ReferenceList>
@@ -152,8 +343,58 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{00AB1756-789C-4776-9D65-5E8C5C8958BF}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_boost_OnFail" ID="{350418D2-3FAB-4D3F-8688-EE5950C7ECB4}" ShortID="311810112">
+													<Language>SFX</Language>
+													<AudioFile>sfx_boost_OnFail.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_boost_OnFail" ID="{350418D2-3FAB-4D3F-8688-EE5950C7ECB4}" Platform="Linked"/>
+											</ActiveSourceList>
 										</Sound>
-										<Sound Name="boost_OnStop" ID="{6EC7969B-A4BD-4CC5-8A89-3188CC5DBCB9}" ShortID="942987966">
+										<Sound Name="sfx_boost_OnLoop" ID="{74A6145E-E753-4115-A6A7-AB6D7E232B4B}" ShortID="476578963">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>26</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{A8B915BE-4CCB-4D93-8E01-8DEA72BF4FBE}" ShortID="170337547">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Speed" ID="{04326F1C-477A-4061-B74D-7B1B01E9FF5F}" WorkUnitID="{3C9E3BD0-7690-426D-9B98-AC59B30584CF}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{8299AE5E-4A7A-4410-8F42-171462AC4B28}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>75</XPos>
+																		<YPos>3138</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E85F9374-D2F4-4AA7-A471-006822E3F66B}"/>
@@ -162,6 +403,21 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{00AB1756-789C-4776-9D65-5E8C5C8958BF}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_boost_OnLoop" ID="{43ACB882-786C-4470-824A-5F163C090BC3}" ShortID="640644190">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="460.15"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0.253351206434316"/>
+														<Property Name="LoopEnd" Type="Real64" Value="2.32150164444688"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>sfx_boost_OnLoop.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_boost_OnLoop" ID="{43ACB882-786C-4470-824A-5F163C090BC3}" Platform="Linked"/>
+											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 								</ActorMixer>
@@ -186,6 +442,19 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{00AB1756-789C-4776-9D65-5E8C5C8958BF}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_item_OnPickUp" ID="{AB4831B5-6064-42D1-9C1F-64CC6C9E6E79}" ShortID="141938913">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="7.50142984807864E-02"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_item_OnPickUp.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_item_OnPickUp" ID="{AB4831B5-6064-42D1-9C1F-64CC6C9E6E79}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 								<Sound Name="item_OnUse" ID="{371E678F-C2E0-42C5-853D-20F1B7A80872}" ShortID="527851388">
 									<ReferenceList>
@@ -196,6 +465,15 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{00AB1756-789C-4776-9D65-5E8C5C8958BF}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_item_OnUse" ID="{8D403E48-649C-4DAC-8140-85037B754819}" ShortID="855128871">
+											<Language>SFX</Language>
+											<AudioFile>sfx_item_OnUse.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_item_OnUse" ID="{8D403E48-649C-4DAC-8140-85037B754819}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 						</ActorMixer>
@@ -210,6 +488,49 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="vehicle_OnCollision" ID="{6978B8E1-73F4-4469-8DED-0C734914654F}" ShortID="911218611">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C6DED7DF-AA97-4CE9-88C4-CD42E9679E49}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{6F3748AD-6D5A-46D4-85C2-5B69A13285AD}" ShortID="425388572">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Speed" ID="{04326F1C-477A-4061-B74D-7B1B01E9FF5F}" WorkUnitID="{3C9E3BD0-7690-426D-9B98-AC59B30584CF}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{110899AE-E576-49F5-9864-45A35AC73530}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-10</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>75</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E85F9374-D2F4-4AA7-A471-006822E3F66B}"/>
@@ -218,6 +539,15 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{00AB1756-789C-4776-9D65-5E8C5C8958BF}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_vehicle_OnCollision" ID="{F2338B1A-07C8-40E6-A0E9-62B64E1C8A16}" ShortID="1058234691">
+											<Language>SFX</Language>
+											<AudioFile>sfx_vehicle_OnCollision.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_vehicle_OnCollision" ID="{F2338B1A-07C8-40E6-A0E9-62B64E1C8A16}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 						</ActorMixer>
@@ -282,6 +612,15 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{00AB1756-789C-4776-9D65-5E8C5C8958BF}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="The Chris Alan - 8-Bit SFX &amp; UI - Button Open Menu 2" ID="{468D0C0E-2313-4AEB-A94F-D75EA545C6FE}" ShortID="339057900">
+									<Language>SFX</Language>
+									<AudioFile>The Chris Alan - 8-Bit SFX &amp; UI - Button Open Menu 2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="The Chris Alan - 8-Bit SFX &amp; UI - Button Open Menu 2" ID="{468D0C0E-2313-4AEB-A94F-D75EA545C6FE}" Platform="Linked"/>
+							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 				</ActorMixer>
