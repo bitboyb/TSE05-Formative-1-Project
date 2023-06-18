@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: c4aba818aa4d8745aebfe5729e41244d
     GuidInternal: 
-    m_lastTime: -8585145139836738302
+    m_lastTime: -8585144886242648928
     List:
     - name: Master_SoundBank
       guid: 6201d29f518c3844b3f64edbbc2f15fd
@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5e410d49c75b8d43983d64c9ab354f5d
     GuidInternal: 
-    m_lastTime: -8585145110208308010
+    m_lastTime: -8585144846147829781
     List:
     - name: Play_Boost_Fail
       guid: 1915e9d619d4754c980da02e1712e424
@@ -59,8 +59,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Play_Boost_Fail
       maxAttenuation: 100
-      maxDuration: 2.063667
-      minDuration: 2.063667
+      maxDuration: 0.398349
+      minDuration: 0.398349
     - name: Play_Boost_Start
       guid: 5a12392b25954640992b009f82f16684
       id: 1048210378
@@ -95,8 +95,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Play_Button_OnPress
       maxAttenuation: 0
-      maxDuration: 0.384
-      minDuration: 0.384
+      maxDuration: 0.367786
+      minDuration: 0.367786
     - name: Play_Collision
       guid: 9fe54c78c5697246a0e8ecbf8d8c35a3
       id: 1553219250
@@ -155,8 +155,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Play_Item_Hit
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 2.468652
+      minDuration: 2.468652
     - name: Play_Item_Use
       guid: 5aa8ddb81f53f34ea74243c96b7cc64b
       id: 3300110083
@@ -167,8 +167,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Play_Item_Use
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 2.350833
+      minDuration: 2.350833
     - name: Play_Jump
       guid: 5012d2b18325bd4e994cb0cde6dab722
       id: 3689126666
@@ -179,8 +179,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Play_Jump
       maxAttenuation: 100
-      maxDuration: 2.986304
-      minDuration: 1.055818
+      maxDuration: 0.742573
+      minDuration: 0.262539
     - name: Play_Land
       guid: 2b21b91ed28a96488379b8e1ce4122a2
       id: 4285282925
@@ -191,8 +191,20 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Play_Land
       maxAttenuation: 100
-      maxDuration: 1.463667
-      minDuration: 1.463667
+      maxDuration: 0.56471
+      minDuration: 0.315107
+    - name: Play_Surface
+      guid: 6bed5ca652c44a409b8a752d3406fb3e
+      id: 1439313559
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Surface
+        ObjectType: 3
+      Path: Default Work Unit\Play_Surface
+      maxAttenuation: 100
+      maxDuration: -1
+      minDuration: -1
     - name: Play_TireSkid
       guid: ab1f8055f13c5842988a35209cc2634d
       id: 1953146513
@@ -205,6 +217,30 @@ MonoBehaviour:
       maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
+    - name: Play_Track_Ambience
+      guid: a6b63c81bbd8ef44bbd3289b5a7f003a
+      id: 326682518
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Track_Ambience
+        ObjectType: 3
+      Path: Default Work Unit\Play_Track_Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Surface
+      guid: 5169969c0ac6b94eb16fd53b28363973
+      id: 1065835409
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Surface
+        ObjectType: 3
+      Path: Default Work Unit\Stop_Surface
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_TireSkid
       guid: 4e36aedea40cfb45b4ccba4252b36075
       id: 3995482915
@@ -289,7 +325,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 539f416c5f23914b81f2f14004bd640f
     GuidInternal: 
-    m_lastTime: -8586042884014775808
+    m_lastTime: -8585144888424847161
     List:
     - name: GroundSurface
       guid: 48388c938fa55947ad4682f67b46f0d6
@@ -301,17 +337,54 @@ MonoBehaviour:
         ObjectType: 11
       Path: Default Work Unit\GroundSurface
       values:
-      - name: OffRoad
+      - name: Dirt
         guid: 27524e7f8dbb3642823e1e4db4645468
-        id: 1481171086
+        id: 2195636714
         PathAndIcons:
-        - ElementName: OffRoad
+        - ElementName: Dirt
           ObjectType: 10
-      - name: Tarmac
-        guid: abb409060c72a54fba3bea69e7a2ab60
-        id: 3769881715
+      - name: Grass
+        guid: 4a065a401392c14291f9510e2afa1c18
+        id: 4248645337
         PathAndIcons:
-        - ElementName: Tarmac
+        - ElementName: Grass
+          ObjectType: 10
+      - name: Track
+        guid: abb409060c72a54fba3bea69e7a2ab60
+        id: 3579833626
+        PathAndIcons:
+        - ElementName: Track
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: VehicleType
+      guid: 8ba83d833fe62442a9f35292de25cb58
+      id: 1064382335
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: VehicleType
+        ObjectType: 11
+      Path: Default Work Unit\VehicleType
+      values:
+      - name: Bike
+        guid: 230e9556e978a346bf7fc178d722ff35
+        id: 1158492534
+        PathAndIcons:
+        - ElementName: Bike
+          ObjectType: 10
+      - name: Kart
+        guid: 9453a3e7c281bf428bbee631a14155b5
+        id: 2199896603
+        PathAndIcons:
+        - ElementName: Kart
+          ObjectType: 10
+      - name: ThreeWheeler
+        guid: fa8071701b86e24eb4d6512fb2693357
+        id: 1101022401
+        PathAndIcons:
+        - ElementName: ThreeWheeler
           ObjectType: 10
       ValueGuids: []
       ValueIcons: []
@@ -327,6 +400,7 @@ MonoBehaviour:
   - /Kart_Racer_Wwise_WwiseProject
   - /Kart_Racer_Wwise_WwiseProject/Events
   - /Kart_Racer_Wwise_WwiseProject/Events/Default Work Unit
-  - /Kart_Racer_Wwise_WwiseProject/SoundBanks
+  - /Kart_Racer_Wwise_WwiseProject/Switches
+  - /Kart_Racer_Wwise_WwiseProject/Switches/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

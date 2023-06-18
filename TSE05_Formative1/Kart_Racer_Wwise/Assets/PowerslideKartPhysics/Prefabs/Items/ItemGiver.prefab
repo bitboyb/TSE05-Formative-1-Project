@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8326319701834907566}
   - component: {fileID: 8326319701834907567}
   - component: {fileID: 8326319701834907560}
+  - component: {fileID: 1952924278412275571}
   m_Layer: 0
   m_Name: ItemGiver
   m_TagString: Untagged
@@ -56,6 +57,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -107,3 +109,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: 
   ammo: 3
+  cooldown: 1
+--- !u!114 &1952924278412275571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8326319701834907561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b0b10a7b40897646b257cdc3c231a80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemColEventString: Play_Item_Hit

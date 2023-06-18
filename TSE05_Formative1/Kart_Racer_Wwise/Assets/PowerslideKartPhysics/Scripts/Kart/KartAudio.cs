@@ -127,6 +127,11 @@ namespace PowerslideKartPhysics
             itemHitSnd.Post(gameObject);
         }
 
+        public void SetItemSwitch(string itemName)
+        {
+            AkSoundEngine.SetSwitch("ItemType", itemName, gameObject);
+        }
+        
         public void DriftingCheck()
         {
             GroundSurfacePreset currentsurface = theKart.GetWheelSurface();

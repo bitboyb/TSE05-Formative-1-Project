@@ -693,6 +693,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8509182075613953605, guid: d9550c631858cd24a8963f4aebe706d0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: -8065513506099649813, guid: d9550c631858cd24a8963f4aebe706d0,
         type: 3}
       propertyPath: m_Convex
@@ -703,12 +708,22 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7600238022590491404, guid: d9550c631858cd24a8963f4aebe706d0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: -6226125422755354669, guid: d9550c631858cd24a8963f4aebe706d0,
         type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: -1425060476462237420, guid: d9550c631858cd24a8963f4aebe706d0,
         type: 3}
+    - target: {fileID: -6021313975901087042, guid: d9550c631858cd24a8963f4aebe706d0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: -6000263141245324080, guid: d9550c631858cd24a8963f4aebe706d0,
         type: 3}
       propertyPath: m_Convex
@@ -735,6 +750,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 17731fd5c8c998b45ab083cf48fbb267, type: 2}
+    - target: {fileID: -4996687211566984633, guid: d9550c631858cd24a8963f4aebe706d0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: -4835730514514309340, guid: d9550c631858cd24a8963f4aebe706d0,
         type: 3}
       propertyPath: m_IsActive
@@ -744,6 +764,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4410894842221401078, guid: d9550c631858cd24a8963f4aebe706d0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: -4401901602718783372, guid: d9550c631858cd24a8963f4aebe706d0,
         type: 3}
@@ -835,6 +860,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a577ee387727f7e4cb53469d7dabfa41, type: 2}
+    - target: {fileID: -2197611224960238729, guid: d9550c631858cd24a8963f4aebe706d0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: -2153876758974227970, guid: d9550c631858cd24a8963f4aebe706d0,
         type: 3}
       propertyPath: m_IsActive
@@ -860,11 +890,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level
       objectReference: {fileID: 0}
+    - target: {fileID: -593638388042604026, guid: d9550c631858cd24a8963f4aebe706d0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Dirt
+      objectReference: {fileID: 0}
+    - target: {fileID: -501898641318418695, guid: d9550c631858cd24a8963f4aebe706d0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: -439715442410171870, guid: d9550c631858cd24a8963f4aebe706d0,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 54244e8c65339984aa8a05e6fde93cfc, type: 2}
+    - target: {fileID: -226013890491898067, guid: d9550c631858cd24a8963f4aebe706d0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    - target: {fileID: 620779480949608122, guid: d9550c631858cd24a8963f4aebe706d0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: 630183132192668603, guid: d9550c631858cd24a8963f4aebe706d0,
         type: 3}
       propertyPath: m_Convex
@@ -874,6 +924,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275379956826156832, guid: d9550c631858cd24a8963f4aebe706d0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    - target: {fileID: 2290638008656234463, guid: d9550c631858cd24a8963f4aebe706d0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 2717206337565203049, guid: d9550c631858cd24a8963f4aebe706d0,
         type: 3}
@@ -895,6 +955,21 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3627520306805352565, guid: d9550c631858cd24a8963f4aebe706d0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    - target: {fileID: 4723787839690433313, guid: d9550c631858cd24a8963f4aebe706d0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399531794130454864, guid: d9550c631858cd24a8963f4aebe706d0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: 5539222164008697594, guid: d9550c631858cd24a8963f4aebe706d0,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -911,6 +986,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ba9fcf12d90400743b5fa7b48c595793, type: 2}
+    - target: {fileID: 5851430447275341323, guid: d9550c631858cd24a8963f4aebe706d0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
+    - target: {fileID: 6175307669712771283, guid: d9550c631858cd24a8963f4aebe706d0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     - target: {fileID: 6369280690447860043, guid: d9550c631858cd24a8963f4aebe706d0,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1041,6 +1126,8 @@ GameObject:
   m_Component:
   - component: {fileID: 438853494}
   - component: {fileID: 438853493}
+  - component: {fileID: 438853496}
+  - component: {fileID: 438853495}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -1073,12 +1160,65 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438853492}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -304.1455, y: -187.4599, z: 922.2095}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1851587738}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &438853495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438853492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b6eb54bc2e51e94b9b340d05fb121a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e2ddf9dbe3dd72c46ac2630b08523c44,
+      type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &438853496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438853492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef38d7e0528c7a2419532b352003ea9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &512156990
 GameObject:
   m_ObjectHideFlags: 0
@@ -3608,12 +3748,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851587735}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 438853494}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1853229397
 GameObject:

@@ -49,6 +49,7 @@ namespace PowerslideKartPhysics
                     caster.GiveItem(
                         string.IsNullOrEmpty(itemName) ? manager.GetRandomItem() : manager.GetItem(itemName),
                         ammo, false);
+                    
                 }
             }
         }

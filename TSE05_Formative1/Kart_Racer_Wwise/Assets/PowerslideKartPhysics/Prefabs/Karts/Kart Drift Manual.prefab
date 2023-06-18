@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3560252509602115369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3358290185562411614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c324b98deb46047ab9b103adaf9f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastDistance: 0.1
 --- !u!1001 &3954172810953848689
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7,11 +20,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1764003789813687599, guid: e3a4b51f834dd8b4bad73af72b704252,
-        type: 3}
-      propertyPath: m_Name
-      value: Kart Drift Manual
-      objectReference: {fileID: 0}
     - target: {fileID: 1764003789813687594, guid: e3a4b51f834dd8b4bad73af72b704252,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -82,11 +90,23 @@ PrefabInstance:
       propertyPath: boostRate
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 1764003789813687599, guid: e3a4b51f834dd8b4bad73af72b704252,
+        type: 3}
+      propertyPath: m_Name
+      value: Kart Drift Manual
+      objectReference: {fileID: 0}
     - target: {fileID: 3535475314019521751, guid: e3a4b51f834dd8b4bad73af72b704252,
         type: 3}
       propertyPath: boostPreset
       value: 
       objectReference: {fileID: 11400000, guid: 7f011a9da935c2d44af7b6525f6f527e,
         type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6816326099912231591, guid: e3a4b51f834dd8b4bad73af72b704252, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e3a4b51f834dd8b4bad73af72b704252, type: 3}
+--- !u!1 &3358290185562411614 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1764003789813687599, guid: e3a4b51f834dd8b4bad73af72b704252,
+    type: 3}
+  m_PrefabInstance: {fileID: 3954172810953848689}
+  m_PrefabAsset: {fileID: 0}

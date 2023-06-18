@@ -14743,6 +14743,7 @@ GameObject:
   - component: {fileID: 8579437956407325114}
   - component: {fileID: 1933219073386016506}
   - component: {fileID: 81437491}
+  - component: {fileID: -6816326099912231591}
   m_Layer: 8
   m_Name: Kart Drift Auto
   m_TagString: Untagged
@@ -15118,7 +15119,6 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 27075584577bb2c439d04f0d7dfc5dd3,
       type: 2}
-  collisionVelocityVolumeScale: 0.05
 --- !u!114 &1933219073386016506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15179,6 +15179,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &-6816326099912231591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764003789813687599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c324b98deb46047ab9b103adaf9f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastDistance: 0.1
 --- !u!1 &1764003790394547630
 GameObject:
   m_ObjectHideFlags: 0

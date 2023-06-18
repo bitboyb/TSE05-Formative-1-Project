@@ -17,7 +17,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Speed" ID="{04326F1C-477A-4061-B74D-7B1B01E9FF5F}"/>
-							<Value>0</Value>
+							<Value>75</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SFX_Volume" ID="{8EB8E5BD-B912-4089-9F45-29606364A9DB}"/>
@@ -38,7 +38,8 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="OffRoad" ID="{7F4E5227-BB8D-4236-823E-1E4DB4645468}"/>
+						<CurrentSwitchRef Name="Kart" ID="{E7A35394-81C2-42BF-8BBE-E631A14155B5}"/>
+						<CurrentSwitchRef Name="Dirt" ID="{7F4E5227-BB8D-4236-823E-1E4DB4645468}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

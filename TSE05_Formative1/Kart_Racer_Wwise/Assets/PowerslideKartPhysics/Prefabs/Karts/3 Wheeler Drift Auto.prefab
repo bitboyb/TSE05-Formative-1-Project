@@ -52708,6 +52708,7 @@ GameObject:
   - component: {fileID: 777888531}
   - component: {fileID: 777888532}
   - component: {fileID: 777888533}
+  - component: {fileID: 8949174761577571324}
   m_Layer: 8
   m_Name: 3 Wheeler Drift Auto
   m_TagString: Untagged
@@ -53113,7 +53114,6 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 27075584577bb2c439d04f0d7dfc5dd3,
       type: 2}
-  collisionVelocityVolumeScale: 0.05
 --- !u!114 &777888533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53143,6 +53143,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8949174761577571324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196949148641620721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c324b98deb46047ab9b103adaf9f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastDistance: 0.1
 --- !u!1 &1196949149790043253
 GameObject:
   m_ObjectHideFlags: 0

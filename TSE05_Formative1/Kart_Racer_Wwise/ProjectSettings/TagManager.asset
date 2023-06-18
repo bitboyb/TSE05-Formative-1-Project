@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Walls
+  - Track
+  - Grass
+  - Dirt
   layers:
   - Default
   - TransparentFX

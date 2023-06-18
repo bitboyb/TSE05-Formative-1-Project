@@ -21,19 +21,22 @@
 			<ShortName>Master_SoundBank</ShortName>
 			<Path>Master_SoundBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2216498074" Name="Play_Boost_Fail" ObjectPath="\Events\Default Work Unit\Play_Boost_Fail" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="2.063667" DurationMax="2.063667"/>
+				<Event Id="2216498074" Name="Play_Boost_Fail" ObjectPath="\Events\Default Work Unit\Play_Boost_Fail" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.398349" DurationMax="0.398349"/>
 				<Event Id="1048210378" Name="Play_Boost_Start" ObjectPath="\Events\Default Work Unit\Play_Boost_Start" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="1418047778" Name="Play_Boost_Stop" ObjectPath="\Events\Default Work Unit\Play_Boost_Stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3732510439" Name="Play_Button_OnPress" ObjectPath="\Events\Default Work Unit\Play_Button_OnPress" DurationType="OneShot" DurationMin="0.384000" DurationMax="0.384000"/>
+				<Event Id="3732510439" Name="Play_Button_OnPress" ObjectPath="\Events\Default Work Unit\Play_Button_OnPress" DurationType="OneShot" DurationMin="0.367786" DurationMax="0.367786"/>
 				<Event Id="1553219250" Name="Play_Collision" ObjectPath="\Events\Default Work Unit\Play_Collision" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.534242" DurationMax="0.673103"/>
 				<Event Id="3119007570" Name="Play_Engine_3Wheeler" ObjectPath="\Events\Default Work Unit\Play_Engine_3Wheeler" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="1987163492" Name="Play_Engine_Bike" ObjectPath="\Events\Default Work Unit\Play_Engine_Bike" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="1910152473" Name="Play_Engine_Kart" ObjectPath="\Events\Default Work Unit\Play_Engine_Kart" MaxAttenuation="100.000000" DurationType="Infinite"/>
-				<Event Id="3201268741" Name="Play_Item_Hit" ObjectPath="\Events\Default Work Unit\Play_Item_Hit" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3300110083" Name="Play_Item_Use" ObjectPath="\Events\Default Work Unit\Play_Item_Use" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3689126666" Name="Play_Jump" ObjectPath="\Events\Default Work Unit\Play_Jump" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.055818" DurationMax="2.986304"/>
-				<Event Id="4285282925" Name="Play_Land" ObjectPath="\Events\Default Work Unit\Play_Land" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.463667" DurationMax="1.463667"/>
+				<Event Id="3201268741" Name="Play_Item_Hit" ObjectPath="\Events\Default Work Unit\Play_Item_Hit" DurationType="OneShot" DurationMin="2.468652" DurationMax="2.468652"/>
+				<Event Id="3300110083" Name="Play_Item_Use" ObjectPath="\Events\Default Work Unit\Play_Item_Use" DurationType="OneShot" DurationMin="2.350833" DurationMax="2.350833"/>
+				<Event Id="3689126666" Name="Play_Jump" ObjectPath="\Events\Default Work Unit\Play_Jump" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.262539" DurationMax="0.742573"/>
+				<Event Id="4285282925" Name="Play_Land" ObjectPath="\Events\Default Work Unit\Play_Land" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.315107" DurationMax="0.564710"/>
+				<Event Id="1439313559" Name="Play_Surface" ObjectPath="\Events\Default Work Unit\Play_Surface" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="1953146513" Name="Play_TireSkid" ObjectPath="\Events\Default Work Unit\Play_TireSkid" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="326682518" Name="Play_Track_Ambience" ObjectPath="\Events\Default Work Unit\Play_Track_Ambience" DurationType="Infinite"/>
+				<Event Id="1065835409" Name="Stop_Surface" ObjectPath="\Events\Default Work Unit\Stop_Surface" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3995482915" Name="Stop_TireSkid" ObjectPath="\Events\Default Work Unit\Stop_TireSkid" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -41,9 +44,17 @@
 					<ShortName>sfx_engine_OnLoop.wav</ShortName>
 					<Path>SFX\sfx_engine_OnLoop_85C21AE7.wem</Path>
 				</File>
+				<File Id="38284361" Language="SFX">
+					<ShortName>sfx_tire_gravel_loop.wav</ShortName>
+					<Path>SFX\sfx_tire_gravel_loop_3F0B3E84.wem</Path>
+				</File>
+				<File Id="141938913" Language="SFX">
+					<ShortName>sfx_item_OnPickUp.wav</ShortName>
+					<Path>SFX\sfx_item_OnPickUp_85EB7D04.wem</Path>
+				</File>
 				<File Id="190057265" Language="SFX">
 					<ShortName>sfx_vehicle_OnLand.wav</ShortName>
-					<Path>SFX\sfx_vehicle_OnLand_F2B9B919.wem</Path>
+					<Path>SFX\sfx_vehicle_OnLand_43491713.wem</Path>
 				</File>
 				<File Id="192548547" Language="SFX">
 					<ShortName>sfx_engine_boost_OnSuccess.wav</ShortName>
@@ -51,11 +62,15 @@
 				</File>
 				<File Id="311810112" Language="SFX">
 					<ShortName>sfx_boost_OnFail.wav</ShortName>
-					<Path>SFX\sfx_boost_OnFail_F2B9B919.wem</Path>
+					<Path>SFX\sfx_boost_OnFail_8777E4FD.wem</Path>
+				</File>
+				<File Id="338569068" Language="SFX">
+					<ShortName>sfx_tire_tarmac_loop.wav</ShortName>
+					<Path>SFX\sfx_tire_tarmac_loop_7889BF9D.wem</Path>
 				</File>
 				<File Id="339057900" Language="SFX">
 					<ShortName>The Chris Alan - 8-Bit SFX &amp; UI - Button Open Menu 2.wav</ShortName>
-					<Path>SFX\The Chris Alan - 8-Bit SFX &amp; UI - Button Open Menu 2_F2B9B919.wem</Path>
+					<Path>SFX\The Chris Alan - 8-Bit SFX &amp; UI - Button Open Menu 2_D83B64F5.wem</Path>
 				</File>
 				<File Id="456484620" Language="SFX">
 					<ShortName>sfx_vehicle_OnSkid_loop.wav</ShortName>
@@ -65,9 +80,17 @@
 					<ShortName>sfx_boost_OnLoop.wav</ShortName>
 					<Path>SFX\sfx_boost_OnLoop_DD1EDF05.wem</Path>
 				</File>
+				<File Id="690443461" Language="SFX">
+					<ShortName>amb_track_loop.wav</ShortName>
+					<Path>SFX\amb_track_loop_B54E2A93.wem</Path>
+				</File>
+				<File Id="855128871" Language="SFX">
+					<ShortName>sfx_item_OnUse.wav</ShortName>
+					<Path>SFX\sfx_item_OnUse_F2B9B919.wem</Path>
+				</File>
 				<File Id="918607903" Language="SFX">
 					<ShortName>sfx_vehicle_OnJump.wav</ShortName>
-					<Path>SFX\sfx_vehicle_OnJump_F2B9B919.wem</Path>
+					<Path>SFX\sfx_vehicle_OnJump_2B0F183D.wem</Path>
 				</File>
 				<File Id="1058234691" Language="SFX">
 					<ShortName>sfx_vehicle_OnCollision.wav</ShortName>

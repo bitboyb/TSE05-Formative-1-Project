@@ -21,6 +21,9 @@ namespace PowerslideKartPhysics
         float timeSinceCast = 0.0f;
         public UnityEvent castEvent;
 
+        private Item _lastItem;
+        private KartAudio _kartAudio;
+
         private void Awake()
         {
             kart = GetComponent<Kart>();
@@ -33,11 +36,19 @@ namespace PowerslideKartPhysics
                     kartCol = kart.rotator.GetComponent<Collider>();
                 }
             }
+
+            _kartAudio = GetComponent<KartAudio>();
         }
 
         private void Update()
         {
             timeSinceCast += Time.deltaTime;
+            
+            if (item != _lastItem && item != null)
+            {
+                _kartAudio.SetItemSwitch(item.name);
+                _lastItem = item;
+            }
         }
 
         //Cast currently equipped item

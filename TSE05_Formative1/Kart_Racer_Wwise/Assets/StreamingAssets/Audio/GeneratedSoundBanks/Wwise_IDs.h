@@ -25,7 +25,10 @@ namespace AK
         static const AkUniqueID PLAY_ITEM_USE = 3300110083U;
         static const AkUniqueID PLAY_JUMP = 3689126666U;
         static const AkUniqueID PLAY_LAND = 4285282925U;
+        static const AkUniqueID PLAY_SURFACE = 1439313559U;
         static const AkUniqueID PLAY_TIRESKID = 1953146513U;
+        static const AkUniqueID PLAY_TRACK_AMBIENCE = 326682518U;
+        static const AkUniqueID STOP_SURFACE = 1065835409U;
         static const AkUniqueID STOP_TIRESKID = 3995482915U;
     } // namespace EVENTS
 
@@ -37,10 +40,35 @@ namespace AK
 
             namespace SWITCH
             {
-                static const AkUniqueID OFFROAD = 1481171086U;
-                static const AkUniqueID TARMAC = 3769881715U;
+                static const AkUniqueID DIRT = 2195636714U;
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID TRACK = 3579833626U;
             } // namespace SWITCH
         } // namespace GROUNDSURFACE
+
+        namespace ITEMTYPE
+        {
+            static const AkUniqueID GROUP = 4247838896U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BOUNCEITEM = 2174330704U;
+                static const AkUniqueID HOMINGITEM = 2415874016U;
+                static const AkUniqueID STATICITEM = 196083986U;
+            } // namespace SWITCH
+        } // namespace ITEMTYPE
+
+        namespace VEHICLETYPE
+        {
+            static const AkUniqueID GROUP = 1064382335U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BIKE = 1158492534U;
+                static const AkUniqueID KART = 2199896603U;
+                static const AkUniqueID THREEWHEELER = 1101022401U;
+            } // namespace SWITCH
+        } // namespace VEHICLETYPE
 
     } // namespace SWITCHES
 

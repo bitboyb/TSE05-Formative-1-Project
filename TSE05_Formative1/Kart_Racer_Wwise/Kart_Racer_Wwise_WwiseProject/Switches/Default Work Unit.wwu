@@ -5,8 +5,23 @@
 			<ChildrenList>
 				<SwitchGroup Name="GroundSurface" ID="{938C3848-A58F-4759-AD46-82F67B46F0D6}">
 					<ChildrenList>
-						<Switch Name="Tarmac" ID="{0609B4AB-720C-4FA5-BA3B-EA69E7A2AB60}"/>
-						<Switch Name="OffRoad" ID="{7F4E5227-BB8D-4236-823E-1E4DB4645468}"/>
+						<Switch Name="Track" ID="{0609B4AB-720C-4FA5-BA3B-EA69E7A2AB60}"/>
+						<Switch Name="Dirt" ID="{7F4E5227-BB8D-4236-823E-1E4DB4645468}"/>
+						<Switch Name="Grass" ID="{405A064A-9213-42C1-91F9-510E2AFA1C18}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="VehicleType" ID="{833DA88B-E63F-4224-A9F3-5292DE25CB58}">
+					<ChildrenList>
+						<Switch Name="Kart" ID="{E7A35394-81C2-42BF-8BBE-E631A14155B5}"/>
+						<Switch Name="Bike" ID="{56950E23-78E9-46A3-BF7F-C178D722FF35}"/>
+						<Switch Name="ThreeWheeler" ID="{707180FA-861B-4EE2-B4D6-512FB2693357}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="ItemType" ID="{D7D39ECA-A859-4C17-AB14-70509450BDC4}">
+					<ChildrenList>
+						<Switch Name="StaticItem" ID="{72F90A67-8D71-4BA2-ADFB-713F951D5CDF}"/>
+						<Switch Name="HomingItem" ID="{CA66C99C-1DEB-4099-B7B4-305D51B63AC4}"/>
+						<Switch Name="BounceItem" ID="{0989104D-AC18-48B7-8EBD-AF7FD2F2DE8C}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>
