@@ -3,6 +3,19 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{86E0C7F4-4CE7-48BA-BE33-CEFF2580C0D4}">
 			<PropertyList>
+				<Property Name="Event Action List\{1EB9212B-8AD2-4896-8379-B8E1CE4122A2}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{2B39125A-9525-4046-992B-009F82F16684}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{51B412F9-ED9E-4D8D-9770-3397BE814F84}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{55801FAB-3CF1-4258-988A-35209CC2634D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{60FB115C-4F8F-4378-9A71-54C791A6E58C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{784CE59F-69C5-4672-A0E8-ECBF8D8C35A3}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{9762B01B-EBCE-4970-A558-5B53C482BDA5}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B1D21250-2583-4EBD-994C-B0CDE6DAB722}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B3057319-7BE5-4FD9-B3F9-1D7AF6B92DD5}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B8DDA85A-531F-4EF3-A742-43C96B7CC64B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D6E91519-D419-4C75-980D-A02E1712E424}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{DEAE364E-0CA4-45FB-B4CC-BA4252B36075}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{EB2E0B7F-6619-48C1-AA61-D431B6DF2310}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Mac"></Value>
@@ -15,6 +28,9 @@
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
 					</ValueList>
 				</Property>
+				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value=""/>
+				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value=""/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value=""/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
