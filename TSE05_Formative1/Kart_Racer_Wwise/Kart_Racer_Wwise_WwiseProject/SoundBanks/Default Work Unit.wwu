@@ -8,9 +8,10 @@
 						<ObjectRef Name="Play_Boost_Start" ID="{2B39125A-9525-4046-992B-009F82F16684}" WorkUnitID="{490D415E-5BC7-438D-983D-64C9AB354F5D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Surface" ID="{A65CED6B-C452-404A-9B8A-752D3406FB3E}" WorkUnitID="{490D415E-5BC7-438D-983D-64C9AB354F5D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_TireSkid" ID="{55801FAB-3CF1-4258-988A-35209CC2634D}" WorkUnitID="{490D415E-5BC7-438D-983D-64C9AB354F5D}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_Button_OnPress" ID="{1F8C67A0-03E8-4363-B508-9513D3488046}" WorkUnitID="{490D415E-5BC7-438D-983D-64C9AB354F5D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Button_OnSelect" ID="{1F8C67A0-03E8-4363-B508-9513D3488046}" WorkUnitID="{490D415E-5BC7-438D-983D-64C9AB354F5D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Engine_3Wheeler" ID="{60FB115C-4F8F-4378-9A71-54C791A6E58C}" WorkUnitID="{490D415E-5BC7-438D-983D-64C9AB354F5D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Track_Ambience" ID="{813CB6A6-D8BB-44EF-BBD3-289B5A7F003A}" WorkUnitID="{490D415E-5BC7-438D-983D-64C9AB354F5D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Button_OnHover" ID="{D7020ADD-52C6-4518-9B0D-5B72CF91D1B3}" WorkUnitID="{490D415E-5BC7-438D-983D-64C9AB354F5D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_TireSkid" ID="{DEAE364E-0CA4-45FB-B4CC-BA4252B36075}" WorkUnitID="{490D415E-5BC7-438D-983D-64C9AB354F5D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Collision" ID="{784CE59F-69C5-4672-A0E8-ECBF8D8C35A3}" WorkUnitID="{490D415E-5BC7-438D-983D-64C9AB354F5D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Land" ID="{1EB9212B-8AD2-4896-8379-B8E1CE4122A2}" WorkUnitID="{490D415E-5BC7-438D-983D-64C9AB354F5D}" Filter="7" Origin="Manual"/>

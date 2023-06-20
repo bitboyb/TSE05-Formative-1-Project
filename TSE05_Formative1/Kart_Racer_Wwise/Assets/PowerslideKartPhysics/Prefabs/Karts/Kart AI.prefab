@@ -81,6 +81,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kart AI
       objectReference: {fileID: 0}
+    - target: {fileID: 7250762346891642717, guid: e3a4b51f834dd8b4bad73af72b704252,
+        type: 3}
+      propertyPath: vehicleTypeName
+      value: Kart
+      objectReference: {fileID: 0}
     - target: {fileID: 8579437956407325114, guid: e3a4b51f834dd8b4bad73af72b704252,
         type: 3}
       propertyPath: zeroDoppler

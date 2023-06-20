@@ -22,6 +22,7 @@
 						<Switch Name="StaticItem" ID="{72F90A67-8D71-4BA2-ADFB-713F951D5CDF}"/>
 						<Switch Name="HomingItem" ID="{CA66C99C-1DEB-4099-B7B4-305D51B63AC4}"/>
 						<Switch Name="BounceItem" ID="{0989104D-AC18-48B7-8EBD-AF7FD2F2DE8C}"/>
+						<Switch Name="BoostItem" ID="{3DDDBA2A-C55B-424D-A829-C11A902F9257}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

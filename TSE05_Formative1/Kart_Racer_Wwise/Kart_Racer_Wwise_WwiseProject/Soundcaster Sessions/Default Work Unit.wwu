@@ -24,6 +24,10 @@
 							<Value>0.8</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="ButtonHover" ID="{931F4498-F3DF-413B-AE28-9DC3CEFA6684}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Master_Volume" ID="{AC25B51E-0A25-43C7-B1DC-DCE693022264}"/>
 							<Value>0.8</Value>
 						</RTPCValue>
@@ -38,8 +42,9 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Kart" ID="{E7A35394-81C2-42BF-8BBE-E631A14155B5}"/>
+						<CurrentSwitchRef Name="Bike" ID="{56950E23-78E9-46A3-BF7F-C178D722FF35}"/>
 						<CurrentSwitchRef Name="Dirt" ID="{7F4E5227-BB8D-4236-823E-1E4DB4645468}"/>
+						<CurrentSwitchRef Name="HomingItem" ID="{CA66C99C-1DEB-4099-B7B4-305D51B63AC4}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

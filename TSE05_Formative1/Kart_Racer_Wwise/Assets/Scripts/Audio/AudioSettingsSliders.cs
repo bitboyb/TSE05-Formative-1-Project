@@ -2,69 +2,69 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 [Serializable]
 public class WwiseBus
 {
-    public Slider _slider;
-    public string _rtpcName;
-    
-    public void AddListener()
+    public Slider slider;
+    public string rtpcName;
+
+    public void AddListeners()
     {
-        _slider.onValueChanged.AddListener(delegate
+        slider.onValueChanged.AddListener(delegate
         {
-            AkSoundEngine.SetRTPCValue(_rtpcName, _slider.value);
-            SaveVolume(_slider.value);
+            AkSoundEngine.SetRTPCValue(rtpcName, slider.value);
+            SaveVolume(slider.value);
         });
     }
-    
+
     public void LoadVolume()
     {
-        if (!PlayerPrefs.HasKey(_rtpcName))
-            PlayerPrefs.SetFloat(_rtpcName, 0.8f);
+        if (!PlayerPrefs.HasKey(rtpcName))
+            PlayerPrefs.SetFloat(rtpcName, 0.8f);
 
-        _slider.value = PlayerPrefs.GetFloat(_rtpcName);
+        slider.value = PlayerPrefs.GetFloat(rtpcName);
     }
     
-    public void RemoveListener()
+    public void RemoveListeners()
     {
-        _slider.onValueChanged.RemoveAllListeners();
+        slider.onValueChanged.RemoveAllListeners();
     }
     
     private void SaveVolume(float value)
     {
-        PlayerPrefs.SetFloat(_rtpcName, value);
+        PlayerPrefs.SetFloat(rtpcName, value);
     }
     
     public void DeleteData()
     {
-        PlayerPrefs.DeleteKey(_rtpcName);
+        PlayerPrefs.DeleteKey(rtpcName);
     }
 }
 
 public class AudioSettingsSliders : MonoBehaviour
 {
     public List <WwiseBus> buses;
-        
-    //when this object is enabled, it loads the volumes and adds the listener
+    
     private void OnEnable()
     {
         foreach (var bus in buses)
         {
             bus.LoadVolume();
-            bus.AddListener();
+            bus.AddListeners();
         }
     }
-    //when this object it disabled, it removes the listener
+
     private void OnDisable()
     {
         foreach (var bus in buses)
         {
-            bus.RemoveListener();
+            bus.RemoveListeners();
         }
     }
-    //and finally a method we can call to remove all the user data!
+
     public void DeleteUserData()
     {
         foreach (var bus in buses)

@@ -14744,6 +14744,7 @@ GameObject:
   - component: {fileID: 1933219073386016506}
   - component: {fileID: 81437491}
   - component: {fileID: -6816326099912231591}
+  - component: {fileID: 7250762346891642717}
   m_Layer: 8
   m_Name: Kart Drift Auto
   m_TagString: Untagged
@@ -15191,7 +15192,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2c324b98deb46047ab9b103adaf9f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raycastDistance: 0.1
+--- !u!114 &7250762346891642717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764003789813687599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1746f635e1762af4692eba6c01248c14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vehicleTypeName: Kart
 --- !u!1 &1764003790394547630
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,7 +16,8 @@ namespace AK
         static const AkUniqueID PLAY_BOOST_FAIL = 2216498074U;
         static const AkUniqueID PLAY_BOOST_START = 1048210378U;
         static const AkUniqueID PLAY_BOOST_STOP = 1418047778U;
-        static const AkUniqueID PLAY_BUTTON_ONPRESS = 3732510439U;
+        static const AkUniqueID PLAY_BUTTON_ONHOVER = 951061720U;
+        static const AkUniqueID PLAY_BUTTON_ONSELECT = 2170057642U;
         static const AkUniqueID PLAY_COLLISION = 1553219250U;
         static const AkUniqueID PLAY_ENGINE_3WHEELER = 3119007570U;
         static const AkUniqueID PLAY_ENGINE_BIKE = 1987163492U;
@@ -52,6 +53,7 @@ namespace AK
 
             namespace SWITCH
             {
+                static const AkUniqueID BOOSTITEM = 4196549843U;
                 static const AkUniqueID BOUNCEITEM = 2174330704U;
                 static const AkUniqueID HOMINGITEM = 2415874016U;
                 static const AkUniqueID STATICITEM = 196083986U;
@@ -75,6 +77,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID AMB_VOLUME = 509499584U;
+        static const AkUniqueID BUTTONHOVER = 3035572085U;
         static const AkUniqueID MASTER_VOLUME = 4179668880U;
         static const AkUniqueID SFX_VOLUME = 1564184899U;
         static const AkUniqueID SPEED = 640949982U;

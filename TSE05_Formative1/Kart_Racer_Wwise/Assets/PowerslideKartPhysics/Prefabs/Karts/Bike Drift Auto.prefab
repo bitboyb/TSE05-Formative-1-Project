@@ -24015,6 +24015,7 @@ GameObject:
   - component: {fileID: 7452113816631832033}
   - component: {fileID: 4113863002305737392}
   - component: {fileID: -933789628318032416}
+  - component: {fileID: -7732343776084499648}
   m_Layer: 8
   m_Name: Bike Drift Auto
   m_TagString: Untagged
@@ -24460,7 +24461,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2c324b98deb46047ab9b103adaf9f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raycastDistance: 0.1
+--- !u!114 &-7732343776084499648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3383327082568396878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1746f635e1762af4692eba6c01248c14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vehicleTypeName: Bike
 --- !u!1 &3383327083145185487
 GameObject:
   m_ObjectHideFlags: 0
