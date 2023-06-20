@@ -16,7 +16,7 @@ public class WwiseBus
         slider.onValueChanged.AddListener(delegate
         {
             AkSoundEngine.SetRTPCValue(rtpcName, slider.value);
-            SaveVolume(slider.value);
+            PlayerPrefs.SetFloat(rtpcName, slider.value);
         });
     }
 
@@ -28,20 +28,9 @@ public class WwiseBus
         slider.value = PlayerPrefs.GetFloat(rtpcName);
     }
     
-    public void RemoveListeners()
-    {
-        slider.onValueChanged.RemoveAllListeners();
-    }
-    
-    private void SaveVolume(float value)
-    {
-        PlayerPrefs.SetFloat(rtpcName, value);
-    }
-    
-    public void DeleteData()
-    {
-        PlayerPrefs.DeleteKey(rtpcName);
-    }
+    public void RemoveListeners() => slider.onValueChanged.RemoveAllListeners();
+
+    public void DeleteData() => PlayerPrefs.DeleteKey(rtpcName);
 }
 
 public class AudioSettingsSliders : MonoBehaviour
