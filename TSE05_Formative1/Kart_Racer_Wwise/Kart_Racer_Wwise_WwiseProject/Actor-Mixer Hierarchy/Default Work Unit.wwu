@@ -1023,6 +1023,9 @@
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{E9627EBB-2A1E-42B5-84D7-9A98CF66F80D}"/>
+					</PositioningInfo>
 				</ActorMixer>
 				<ActorMixer Name="AMB" ID="{6F595FDA-EF05-434D-AE54-9484F42715DB}" ShortID="325165837">
 					<PropertyList>
@@ -1099,6 +1102,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="sfx_item_OnCollision" ID="{82488D34-DF49-475B-A5FC-057464A94284}" ShortID="62084181">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E85F9374-D2F4-4AA7-A471-006822E3F66B}"/>
@@ -1122,6 +1132,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<SwitchContainer Name="item_OnUse" ID="{457D7B07-BCB2-435E-A060-61F15A30955E}" ShortID="131127351">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E85F9374-D2F4-4AA7-A471-006822E3F66B}"/>
@@ -1310,7 +1327,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-10</Value>
+										<Value>-14</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

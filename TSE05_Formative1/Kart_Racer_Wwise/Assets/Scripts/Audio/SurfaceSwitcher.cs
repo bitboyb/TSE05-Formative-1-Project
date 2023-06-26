@@ -5,7 +5,6 @@ namespace Audio
 {
     public class SurfaceSwitcher : MonoBehaviour
     {
-        private string _lastSurface;
         private float _raycastDistance = 2f;
         private bool _isPlayingSurfaceEvent;
 
@@ -21,7 +20,6 @@ namespace Audio
                     if (objectTag == null || objectTag == "")
                         objectTag = "Track";
                     
-                    _lastSurface = objectTag;
                     SetSurfaceSwitch(objectTag);
                     _isPlayingSurfaceEvent = true;
                 }

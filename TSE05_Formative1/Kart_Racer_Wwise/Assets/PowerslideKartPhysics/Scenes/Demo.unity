@@ -347,7 +347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverEvent: Play_Button_OnHover
-  selectEvent: Play_Buton_OnSelect
+  selectEvent: Play_Button_OnSelect
 --- !u!1 &131646373
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,7 +457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverEvent: Play_Button_OnHover
-  selectEvent: Play_Buton_OnSelect
+  selectEvent: Play_Button_OnSelect
 --- !u!1 &269361272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,7 +1278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverEvent: Play_Button_OnHover
-  selectEvent: Play_Buton_OnSelect
+  selectEvent: Play_Button_OnSelect
 --- !u!1 &512156990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1869,7 +1869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverEvent: Play_Button_OnHover
-  selectEvent: Play_Buton_OnSelect
+  selectEvent: Play_Button_OnSelect
 --- !u!1 &768868635
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,7 +2134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverEvent: Play_Button_OnHover
-  selectEvent: Play_Buton_OnSelect
+  selectEvent: Play_Button_OnSelect
 --- !u!224 &1001301228 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1038388773726454113, guid: d3986467100db1a4399146a71285f72f,
@@ -2622,7 +2622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverEvent: Play_Button_OnHover
-  selectEvent: Play_Buton_OnSelect
+  selectEvent: Play_Button_OnSelect
 --- !u!1 &1190267828 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3771908722502575145, guid: f0c904c7f8c0d8f4f80445923e2f9d82,
@@ -2642,7 +2642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverEvent: Play_Button_OnHover
-  selectEvent: Play_Buton_OnSelect
+  selectEvent: Play_Button_OnSelect
 --- !u!1 &1222979532
 GameObject:
   m_ObjectHideFlags: 0
@@ -3306,7 +3306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverEvent: Play_Button_OnHover
-  selectEvent: Play_Buton_OnSelect
+  selectEvent: Play_Button_OnSelect
 --- !u!1 &1558991717 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2624059005644944165, guid: f0c904c7f8c0d8f4f80445923e2f9d82,
@@ -3326,7 +3326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverEvent: Play_Button_OnHover
-  selectEvent: Play_Buton_OnSelect
+  selectEvent: Play_Button_OnSelect
 --- !u!1 &1627685739
 GameObject:
   m_ObjectHideFlags: 0

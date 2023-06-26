@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>D:\Unity Prototypes\TSE05-Formative-1-Project\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Unity Prototypes\TSE05-Formative-1-Project\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Unity Prototypes\TSE05-Formative-1-Project\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Unity Prototypes\TSE05-Formative-1-Project\TSE05_Formative1\Kart_Racer_Wwise\Kart_Racer_Wwise_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2469504869" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Master_SoundBank</ObjectPath>
+			<ShortName>Master_SoundBank</ShortName>
+			<Path>Master_SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2216498074" Name="Play_Boost_Fail" ObjectPath="\Events\Default Work Unit\SFX\Play_Boost_Fail" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.398349" DurationMax="0.398349"/>
+				<Event Id="1048210378" Name="Play_Boost_Start" ObjectPath="\Events\Default Work Unit\SFX\Play_Boost_Start" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="1418047778" Name="Play_Boost_Stop" ObjectPath="\Events\Default Work Unit\SFX\Play_Boost_Stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="951061720" Name="Play_Button_OnHover" ObjectPath="\Events\Default Work Unit\UI\Play_Button_OnHover" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
+				<Event Id="2170057642" Name="Play_Button_OnSelect" ObjectPath="\Events\Default Work Unit\UI\Play_Button_OnSelect" DurationType="OneShot" DurationMin="0.248240" DurationMax="0.248240"/>
+				<Event Id="1553219250" Name="Play_Collision" ObjectPath="\Events\Default Work Unit\SFX\Play_Collision" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.417326" DurationMax="0.743590"/>
+				<Event Id="3119007570" Name="Play_Engine_3Wheeler" ObjectPath="\Events\Default Work Unit\SFX\Play_Engine_3Wheeler" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="1987163492" Name="Play_Engine_Bike" ObjectPath="\Events\Default Work Unit\SFX\Play_Engine_Bike" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="1910152473" Name="Play_Engine_Kart" ObjectPath="\Events\Default Work Unit\SFX\Play_Engine_Kart" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="3201268741" Name="Play_Item_Hit" ObjectPath="\Events\Default Work Unit\UI\Play_Item_Hit" DurationType="OneShot" DurationMin="2.468652" DurationMax="2.468652"/>
+				<Event Id="3300110083" Name="Play_Item_Use" ObjectPath="\Events\Default Work Unit\UI\Play_Item_Use" DurationType="OneShot" DurationMin="0.483091" DurationMax="0.562485"/>
+				<Event Id="3689126666" Name="Play_Jump" ObjectPath="\Events\Default Work Unit\SFX\Play_Jump" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.262539" DurationMax="0.742573"/>
+				<Event Id="4285282925" Name="Play_Land" ObjectPath="\Events\Default Work Unit\SFX\Play_Land" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.315107" DurationMax="0.564710"/>
+				<Event Id="1439313559" Name="Play_Surface" ObjectPath="\Events\Default Work Unit\SFX\Play_Surface" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="1953146513" Name="Play_TireSkid" ObjectPath="\Events\Default Work Unit\SFX\Play_TireSkid" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="326682518" Name="Play_Track_Ambience" ObjectPath="\Events\Default Work Unit\AMB\Play_Track_Ambience" DurationType="Infinite"/>
+				<Event Id="1065835409" Name="Stop_Surface" ObjectPath="\Events\Default Work Unit\SFX\Stop_Surface" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3995482915" Name="Stop_TireSkid" ObjectPath="\Events\Default Work Unit\SFX\Stop_TireSkid" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="13610854" Language="SFX">
+					<ShortName>sfx_item_staticItem_OnFire.wav</ShortName>
+					<Path>SFX\sfx_item_staticItem_OnFire_0CBB5116.wem</Path>
+				</File>
+				<File Id="26672278" Language="SFX">
+					<ShortName>sfx_engine_OnLoop.wav</ShortName>
+					<Path>SFX\sfx_engine_OnLoop_85C21AE7.wem</Path>
+				</File>
+				<File Id="38284361" Language="SFX">
+					<ShortName>sfx_tire_gravel_loop.wav</ShortName>
+					<Path>SFX\sfx_tire_gravel_loop_3F0B3E84.wem</Path>
+				</File>
+				<File Id="141938913" Language="SFX">
+					<ShortName>sfx_item_OnPickUp.wav</ShortName>
+					<Path>SFX\sfx_item_OnPickUp_85EB7D04.wem</Path>
+				</File>
+				<File Id="148992808" Language="SFX">
+					<ShortName>sfx_item_bounceItem_OnFire.wav</ShortName>
+					<Path>SFX\sfx_item_bounceItem_OnFire_503599FF.wem</Path>
+				</File>
+				<File Id="171948407" Language="SFX">
+					<ShortName>sfx_button_OnPress.wav</ShortName>
+					<Path>SFX\sfx_button_OnPress_F2B9B919.wem</Path>
+				</File>
+				<File Id="190057265" Language="SFX">
+					<ShortName>sfx_vehicle_OnLand.wav</ShortName>
+					<Path>SFX\sfx_vehicle_OnLand_43491713.wem</Path>
+				</File>
+				<File Id="192548547" Language="SFX">
+					<ShortName>sfx_engine_boost_OnSuccess.wav</ShortName>
+					<Path>SFX\sfx_engine_boost_OnSuccess_F2B9B919.wem</Path>
+				</File>
+				<File Id="311810112" Language="SFX">
+					<ShortName>sfx_boost_OnFail.wav</ShortName>
+					<Path>SFX\sfx_boost_OnFail_8777E4FD.wem</Path>
+				</File>
+				<File Id="338569068" Language="SFX">
+					<ShortName>sfx_tire_tarmac_loop.wav</ShortName>
+					<Path>SFX\sfx_tire_tarmac_loop_7889BF9D.wem</Path>
+				</File>
+				<File Id="456484620" Language="SFX">
+					<ShortName>sfx_vehicle_OnSkid_loop.wav</ShortName>
+					<Path>SFX\sfx_vehicle_OnSkid_loop_85C21AE7.wem</Path>
+				</File>
+				<File Id="626053590" Language="SFX">
+					<ShortName>sfx_item_OnUse.wav</ShortName>
+					<Path>SFX\sfx_item_OnUse_13AE49F9.wem</Path>
+				</File>
+				<File Id="640644190" Language="SFX">
+					<ShortName>sfx_boost_OnLoop.wav</ShortName>
+					<Path>SFX\sfx_boost_OnLoop_DD1EDF05.wem</Path>
+				</File>
+				<File Id="653820464" Language="SFX">
+					<ShortName>sfx_button_OnHover.wav</ShortName>
+					<Path>SFX\sfx_button_OnHover_F2B9B919.wem</Path>
+				</File>
+				<File Id="690443461" Language="SFX">
+					<ShortName>amb_track_loop.wav</ShortName>
+					<Path>SFX\amb_track_loop_B54E2A93.wem</Path>
+				</File>
+				<File Id="918607903" Language="SFX">
+					<ShortName>sfx_vehicle_OnJump.wav</ShortName>
+					<Path>SFX\sfx_vehicle_OnJump_2B0F183D.wem</Path>
+				</File>
+				<File Id="991564169" Language="SFX">
+					<ShortName>sfx_item_homingItem_OnFire.wav</ShortName>
+					<Path>SFX\sfx_item_homingItem_OnFire_6392FB47.wem</Path>
+				</File>
+				<File Id="1058234691" Language="SFX">
+					<ShortName>sfx_vehicle_OnCollision.wav</ShortName>
+					<Path>SFX\sfx_vehicle_OnCollision_33861880.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

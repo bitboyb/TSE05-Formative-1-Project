@@ -1,65 +1,67 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-[Serializable]
-public class WwiseBus
+namespace Audio
 {
-    public Slider slider;
-    public string rtpcName;
-
-    public void AddListeners()
+    [Serializable]
+    public class WwiseBus
     {
-        slider.onValueChanged.AddListener(delegate
+        public Slider slider;
+        public string rtpcName;
+    
+        public void AddListeners()
         {
-            AkSoundEngine.SetRTPCValue(rtpcName, slider.value);
-            PlayerPrefs.SetFloat(rtpcName, slider.value);
-        });
-    }
-
-    public void LoadVolume()
-    {
-        if (!PlayerPrefs.HasKey(rtpcName))
-            PlayerPrefs.SetFloat(rtpcName, 0.8f);
-
-        slider.value = PlayerPrefs.GetFloat(rtpcName);
+            slider.onValueChanged.AddListener(delegate
+            {
+                AkSoundEngine.SetRTPCValue(rtpcName, slider.value);
+                PlayerPrefs.SetFloat(rtpcName, slider.value);
+            });
+        }
+    
+        public void LoadVolume()
+        {
+            if (!PlayerPrefs.HasKey(rtpcName))
+                PlayerPrefs.SetFloat(rtpcName, 0.8f);
+    
+            slider.value = PlayerPrefs.GetFloat(rtpcName);
+        }
+        
+        public void RemoveListeners() => slider.onValueChanged.RemoveAllListeners();
+    
+        public void DeleteData() => PlayerPrefs.DeleteKey(rtpcName);
     }
     
-    public void RemoveListeners() => slider.onValueChanged.RemoveAllListeners();
-
-    public void DeleteData() => PlayerPrefs.DeleteKey(rtpcName);
-}
-
-public class AudioSettingsSliders : MonoBehaviour
-{
-    public List <WwiseBus> buses;
+    public class AudioSettingsSliders : MonoBehaviour
+    {
+        public List <WwiseBus> buses;
+        
+        private void OnEnable()
+        {
+            foreach (var bus in buses)
+            {
+                bus.LoadVolume();
+                bus.AddListeners();
+            }
+        }
     
-    private void OnEnable()
-    {
-        foreach (var bus in buses)
+        private void OnDisable()
         {
-            bus.LoadVolume();
-            bus.AddListeners();
+            foreach (var bus in buses)
+            {
+                bus.RemoveListeners();
+            }
         }
-    }
-
-    private void OnDisable()
-    {
-        foreach (var bus in buses)
+    
+        public void DeleteUserData()
         {
-            bus.RemoveListeners();
-        }
-    }
-
-    public void DeleteUserData()
-    {
-        foreach (var bus in buses)
-        {
-            bus.DeleteData();
-            bus.LoadVolume();
+            foreach (var bus in buses)
+            {
+                bus.DeleteData();
+                bus.LoadVolume();
+            }
         }
     }
 }
+
